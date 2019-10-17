@@ -5,8 +5,10 @@ def re_sort(a):
     l = [0,0,0]
     ls=[]
     for i in a:
+        #计算每种颜色球的个数
         l[i]+=1
     for k in range(3):
         for g in range(l[k]):
+            #按每种球排列
             ls.append(k)
     return ls
